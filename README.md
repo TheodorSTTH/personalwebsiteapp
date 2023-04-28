@@ -1,6 +1,6 @@
 ## About
 
-Just a quick NextJS, TailindCSS, DaisyUI project i hacked together to have somthing to show for myself.
+Just a quick NextJS, TailindCSS, DaisyUI project i hacked together to have somthing to show for myself. View it [here](https://personalwebsiteapp.vercel.app/)
 
 ## Getting Started
 
