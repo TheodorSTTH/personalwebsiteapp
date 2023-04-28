@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body data-theme='lofi' className='min-h-screen bg-white flex flex-col justify-between'>
+      <body data-theme='corporate' className='min-h-screen bg-white flex flex-col justify-between'>
         {/* <Navbar /> */}
         <div className='grow bg-white'>
           <Main />
