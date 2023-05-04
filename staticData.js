@@ -1,7 +1,7 @@
 export const cards = [{
     imageURL: "/chatcards.png",
     title: "ChatCards",
-    about: "A hackathon project for a flashcard service that lets you talk to your flashcards.",
+    about: "A hackathon project for a flashcard service that lets you talk to your flashcards with ChatGPT-3.",
     labels: ["NextJS", "Firebase", "Tailwind", "OpenAI"],
     badge: "new",
     urls: [{
