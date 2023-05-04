@@ -57,7 +57,7 @@ export default function Home() {
         <title>Theodor</title>
       </Head>
       <H1>Hey 👋 I am Theodor</H1>
-      <p>I am a fullstack developer located in <Anchor body='Oslo, Norway' href='https://goo.gl/maps/P4Xd2ajVkqvfqwHaA' title='Show on Google Maps'/>, i love building cool projects and i am currently learning ML (Machine Learning)</p>
+      <p>I am a fullstack developer located in <Anchor body='Oslo, Norway' href='https://goo.gl/maps/P4Xd2ajVkqvfqwHaA' title='Show on Google Maps'/>, I love building cool projects and I am currently learning ML (Machine Learning)</p>
       <div className='flex gap-4'>
         <ContactButton className='btn-accent' url='mailto:theodor.learn@gmail.com'>
           Send me an Email 🤩
