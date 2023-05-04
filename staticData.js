@@ -75,4 +75,16 @@ export const cards = [{
         url: "https://fantasticfruits.vercel.app/"
     }],
     additionalAbout: "The payment method does not work on the website due to the age limit on the PayPal API",
+},
+{
+    imageURL: "/dogsvscats.png",
+    title: "Dogs VS Cats - AI",
+    about: "CNN using fastai to differentiate between dogs and cats. Coded from tutorial",
+    labels: ["Gradio", "FastAI", "PyTorch"],
+    urls: [
+    {
+        title: "huggingface",
+        url: "https://huggingface.co/spaces/TheodorSTTH/dogsVScats"
+    }],
+    additionalAbout: "From the fastai course, I am currently learning ML so this is just to show i know somthing about AI",
 }]
