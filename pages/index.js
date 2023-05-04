@@ -1,29 +1,32 @@
+// next/react
 import Image from 'next/image'
-import H1 from '../components/H1'
+import Head from 'next/head'
+import { useState, useEffect } from 'react'
+
+// components
+import H1 from '@/components/H1'
 import H2 from '@/components/H2'
 import Anchor from '@/components/Anchor'
-import Head from 'next/head'
 import ContactButton from '@/components/ContactButton'
 import Card from '@/components/Card'
-import { useState, useEffect } from 'react'
 import Modal from '@/components/Modal'
 import { cards } from '@/staticData'
 import Indicator from '@/components/Indicator'
-import { useCallback, useRef } from 'react';
 
 export default function Home() {
-  const [currentCard, setCurrentCard] = useState(null)
+  const [currentCard, setCurrentCard] = useState(null) // * state to keep up with currently opened card
   useEffect(() => {
-    window.location.hash = '';
+    window.location.hash = ''; // * Removes the # when page loades to remove modals
   }, []);
 
   return (
     <main className="flex flex-col items-left justify-start gap-8 md:p-24 p-8 bg-base-100">
-      <Modal
+      {currentCard && <Modal // * Modal for Card popups
       id='portfolio-modal'
       exitBtnText="exit"
       >
-        {currentCard && <><div className="flex items-center gap-4">
+        <>
+        <div className="flex items-center gap-4">
           <H2>{currentCard.title}</H2>
           {currentCard.badge && <div className="badge badge-secondary">{currentCard.badge.toUpperCase()}</div>}
         </div>
@@ -32,7 +35,7 @@ export default function Home() {
         <Image
         src={currentCard.imageURL}
         priority
-        alt="Picture of the author"
+        alt={"Picture of " + currentCard.title}
         width={500}
         height={500}
         className="border"
@@ -44,12 +47,12 @@ export default function Home() {
         </div>
         <div className='flex gap-4'>
           {
-            currentCard.urls.map(item => {
+            currentCard.urls.map(item => { // * Show relevant links
               return <a className="link link-primary" href={item.url}>{item.title}</a>
             })
           }
-        </div></>}
-      </Modal>
+        </div></>
+      </Modal>}
       <Head>
         <title>Theodor</title>
       </Head>
@@ -77,7 +80,7 @@ export default function Home() {
       </div>
       <H2>My projects</H2>
       <div className='flex flex-wrap gap-12'>
-        {
+        { // * Display cards and add indicators where needed
           cards.map(card => (
             card.indicator ? <Indicator text={card.indicator}>
               <Card {...card} setState={setCurrentCard} href="portfolio-modal"/>

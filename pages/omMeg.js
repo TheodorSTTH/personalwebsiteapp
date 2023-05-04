@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import H1 from '../components/H1'
-import Anchor from '@/components/Anchor'
 import H2 from '@/components/H2'
 
 export default function omMeg() {
