@@ -16,7 +16,7 @@ export const cards = [{
         title: "website (demo)",
         url: "https://chatcards.vercel.app/"
     }],
-    additionalAbout: "The ChatCards prosject won the Treasure Hacks 3.5 hackathon. Made in 2 days",
+    additionalAbout: "The ChatCards prosject won the Treasure Hacks 3.5 hackathon for best accessibility. Made in 2 days",
     indicator: "WINNER"
 },
 {
