@@ -8,7 +8,7 @@ export default function cv(x) {
         </Head>
         <H1>Min CV - Theodor Strøm-Thrane</H1>
         <br />
-        <iframe // Tailwind Next.js Firebase Paypal DaisyUI
+        <iframe
         src="/docs/TSTCV_proff.pdf"
         frameBorder="0"
         scrolling="auto"
