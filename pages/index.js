@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-left justify-start gap-8 md:p-24 p-8 bg-base-100">
+    <main className="flex flex-col items-left justify-start gap-8 md:p-24 p-6 bg-base-100">
       {currentCard && <Modal // * Modal for Card popups
       id='portfolio-modal'
       exitBtnText="exit"
@@ -58,7 +58,7 @@ export default function Home() {
       </Head>
       <H1>Hey 👋 I am Theodor</H1>
       <p>I am a fullstack developer located in <Anchor body='Oslo, Norway' href='https://goo.gl/maps/P4Xd2ajVkqvfqwHaA' title='Show on Google Maps'/>, I love building cool projects and I am currently learning ML (Machine Learning)</p>
-      <div className='flex gap-4'>
+      <div className='flex gap-4 flex-col md:flex-row '>
         <ContactButton className='btn-accent' url='mailto:theodor.learn@gmail.com'>
           Send me an Email 🤩
         </ContactButton>

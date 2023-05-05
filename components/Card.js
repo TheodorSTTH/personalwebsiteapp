@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Card({imageURL, urls=[], labels=[], badge, title="", about="", setState, href="", additionalAbout}) {
     return <a href={"#" + href}>
-        <div className="card w-96 bg-base-100 shadow-xl hover:shadow-lg border transition-all" onClick={() => setState({imageURL, urls, labels, badge, title, about, additionalAbout})}>
+        <div className="card w-90 md:w-96 bg-base-100 shadow-xl hover:shadow-lg border transition-all" onClick={() => setState({imageURL, urls, labels, badge, title, about, additionalAbout})}>
             <figure className="border-b">
                 <Image
                 src={imageURL}
