@@ -16,7 +16,7 @@ export const cards = [{
         title: "website (demo)",
         url: "https://chatcards.vercel.app/"
     }],
-    additionalAbout: "The ChatCards project won the Treasure Hacks 3.5 hackathon for best accessibility. Made in 2 days",
+    additionalAbout: "The ChatCards project won the Treasure Hacks 3.5 hackathon for best accessibility. Made in 2 days. Project is parked so may not work anymore",
     indicator: "WINNER"
 },
 {
@@ -24,7 +24,7 @@ export const cards = [{
     title: "Page Pranker",
     about: "Page Pranker is a fun chrome extention that lets you prank friends/enemies by installing it in their browser",
     labels: ["HTML", "CSS", "JS"],
-    indicator: "100 users",
+    indicator: "top 100 users",
     urls: [
     {
         title: "chrome extentions",
@@ -35,15 +35,15 @@ export const cards = [{
 {
     imageURL: "/photosolve.png",
     title: "Photosolve",
-    about: "Photosolve lets you solve problems with GPT-3 by taking pictures of them.",
+    about: "Photosolve lets you solve problems with GPT-3 by taking pictures of them. It had quite a bit of organic growth, but I didn't realize its potential until it was too late :/",
     labels: ["React Native", "Expo", "Firebase", "OpenAI"],
-    indicator: "300+ users",
+    indicator: "1000+ downloads",
     urls: [
     {
         title: "google playstore",
-        url: "https://play.google.com/store/search?q=photosolve&c=apps"
+        url: "https://play.google.com/store/apps/details?id=com.Photosolve"
     }],
-    additionalAbout: "The app does not work for all screen sizes since the app was more of an experiment"
+    additionalAbout: "The app is parked and may not work anymore"
 },
 {
     imageURL: "/fargealbum.png",
@@ -74,7 +74,7 @@ export const cards = [{
         title: "website (demo)",
         url: "https://fantasticfruits.vercel.app/"
     }],
-    additionalAbout: "The payment method does not work on the website due to the age limit on the PayPal API",
+    additionalAbout: "The payment method does not work on the website due to the age limit on the PayPal API. Project is parked so may not work anymore. You should be able to get it up and running if you change the configs",
 },
 {
     imageURL: "/dogsvscats.png",
